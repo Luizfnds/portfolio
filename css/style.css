@@ -12,13 +12,85 @@ body {
 
 main {
     height: 100vh;
-    width: 75%;
+    width: 80%;
     overflow-y: scroll;
 }
 
 aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 5px;
     position: fixed;
     right: 0;
     height: 100vh;
-    width: 25%;
+    width: 20%;
+    background-color: #2c2c37;
 }
+
+.fa {
+    height: 30px;
+    width: 30px;
+    font-size: 25px;
+    padding: 5px 0 0 5px;
+}
+
+
+
+a {
+    color: aliceblue;
+    transition: all 400ms;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+}
+
+#ul-nav {
+    padding-top: 100px;
+}
+
+#ul-nav li{
+    font-size: 20px;
+}
+
+#ul-nav a:hover {
+    letter-spacing: 4px;
+    border-bottom: solid 1px #0D87C0;
+}
+
+#ul-inf {
+    padding-bottom: 30px;
+    row-gap: 10px;
+}
+
+#ul-inf li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 0.9rem;
+    width: 190px;
+    color: aliceblue;
+    border: 1px aliceblue solid;
+    cursor: pointer;
+    transition: all 600ms;
+}
+
+#ul-inf a {
+    color: aliceblue;
+    width: 220px;
+    padding: 7px;
+    text-align: center;
+}
+
+#ul-inf li:hover {
+    width: 180px;
+    letter-spacing: 4px;
+    border-color: #0D87C0;
+}
+
