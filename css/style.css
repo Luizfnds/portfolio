@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;0,700;0,900;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100&display=swap');
 
 * {
     margin: 0;
@@ -60,6 +60,7 @@ aside {
 a {
     color: aliceblue;
     transition: all 600ms;
+    font-weight: 300;
 }
 
 ul {
@@ -116,21 +117,22 @@ ul {
 
 .container {
     display: flex;
-    height: 100%;
+    height: 95%;
     letter-spacing: 5px;
     position: relative;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 }
 
 h2 {
-    font-size: 1rem;
-    height: 30px;
-    border-left: 3px solid var(--azul);
-    padding-left: 20px;
+    font-size: 1.2rem;
+    color: #0D87C0;
+    position: absolute;
+    top: 30px;
     display: flex;
     align-items: center;
-    position: absolute;
-    top: 20px;
-    left: 20px;
     font-weight: 400;
 }
 
@@ -160,16 +162,16 @@ h3 {
 }
 
 #sobre-mim {
-    height: 600px;
-    align-items: flex-start;
-    padding-left: 30px;
+    padding: 20px 60px;
+    row-gap: 100px;
 }
 
 #sobre-mim p {
     letter-spacing: 0;
     font-size: .9rem;
-    padding: 10px 0 20px 0;
-    font-weight: 100;
+    padding: 10px 0 0 0;
+    font-weight: 300;
+    height: 75px;
 }
 
 #sobre-mim h3 {
@@ -180,12 +182,37 @@ h3 {
 
 #sobre-mim img {
     width: 300px;
-    height: 190px;
-    padding: 0 10px 10px 0;
+    height: 400px;
+    padding: 0 40px 0px 0;
 }
 
 #sobre-mim div {
-    padding: 100px 50px 0px 60px;
-    width: 1000px;
-    height: 200px;
+    max-width: 1100px;
+    min-height: 200px;
+}
+
+#sobre-mim ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    row-gap: 15px;
+    padding-top: 30px;
+    padding-right: 30px;
+}  
+
+#sobre-mim li {
+    font-size: 8px;
+    padding: 3px 4px;
+    border: 1px solid var(--azul);
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+}
+
+#sobre-mim .icon {
+    height: 18px;
+    width: 18px;
+    padding-right: 10px;
+    padding-bottom: 0;
 }
