@@ -8,7 +8,7 @@
     --azul: #0D87C0;
     --azul-claro: #0D87C090;
     --preto: #2c2c37;
-    --preto-claro: #2c2c3760;
+    --preto-claro: #2c2c3780;
 }
 
 body {
@@ -28,13 +28,14 @@ main {
 
 main::-webkit-scrollbar,
 #lista-de-projetos::-webkit-scrollbar {
-    background-color: var(--preto-claro);
+    background-color: #2c2c3740;
+    border: 1px solid #2c2c3720;
     width: 6px;
 }
 
 main::-webkit-scrollbar-thumb,
 #lista-de-projetos::-webkit-scrollbar-thumb {
-    background-color: var(--azul);
+    background-color: var(--preto-claro);
     border-radius: 10px;
 }
 
@@ -276,4 +277,34 @@ h3 {
     letter-spacing: 1px;
     border: 1px solid var(--azul-claro);
     padding: 2px 5px;
+}
+
+#lista-de-projetos a {
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .6s;
+    background-color: var(--azul);
+    color: aliceblue;
+}
+
+#lista-de-projetos a:hover {
+    background-color: var(--azul-claro);
+    color: aliceblue;
+}
+
+.caixa {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.menu {
+    display: flex;
+    column-gap: 10px;
+    height: 25px;
 }
