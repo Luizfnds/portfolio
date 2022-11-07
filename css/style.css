@@ -308,3 +308,37 @@ h3 {
     column-gap: 10px;
     height: 25px;
 }
+
+textarea {
+    font-size: 14px;    
+    resize: none;
+    height: 200px;
+    width: 500px;
+    background-color: transparent;
+    border: 1px solid var(--azul);
+    padding: 5px;
+}
+
+input {
+    font-size: 14px;
+    height: 30px;
+    width: 500px;
+    background-color: transparent;
+    border: 1px solid var(--azul);
+    padding: 5px;
+}
+
+#contato form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: flex-end;
+}
+
+#contato button {
+    height: 30px;
+    width: 100px;
+    background-color: var(--azul);
+    color: aliceblue;
+    border: none;
+}
