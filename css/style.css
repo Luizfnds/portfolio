@@ -83,7 +83,7 @@ ul {
 }
 
 #ul-nav a:hover {
-    font-size: 17px;
+    font-size: 1.1rem;
 }
 
 .title-marcado {
@@ -368,6 +368,25 @@ form textarea:focus {
 /* responsividade */
 
 @media only screen and (min-width: 925px) and (max-width: 1260px){
+
+    #ul-nav li {
+        font-size: 0.8rem;
+    }
+
+    #ul-nav a:hover {
+        font-size: 0.9rem;
+    }
+
+    .title-marcado {
+        font-size: 0.9rem;
+        color: var(--azul);
+    }
+
+    #ul-inf li {
+        font-size: .6rem;
+        width: 140px;
+    }
+
     .container {
         padding: 0px 30px;
         font-size: 10px;
@@ -425,10 +444,10 @@ form textarea:focus {
     .menu {
         flex-direction: column;
         row-gap: 4px;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
     }
 
-    #lista-de-projetos a {
+    .projeto a {
         padding: 4px 4px;
     }
 }
