@@ -14,6 +14,28 @@
 <body>
     <main>
 
+        <div id="menu-principal" onclick="acionarMenu()">
+            <i class="fa-solid fa-caret-down"></i>
+        </div>
+
+        <aside>
+            <nav>
+                <ul>
+                    <li><a class="title apresentacao" href="#apresentacao">APRESENTAÇÃO</a></li>
+                    <li><a class="title sobre-mim" href="#sobre-mim">SOBRE MIM</a></li>
+                    <li><a class="title projetos" href="#projetos">PROJETOS</a></li>
+                    <li><a class="title contato" href="#contato">CONTATO</a></li>
+                </ul>
+            </nav>
+            <div id="links-de-contato">
+                <ul>
+                    <li><i class="fa fa-brands fa-github"></i><a href="">GITHUB</a></li>
+                    <li><i class="fa fa-brands fa-linkedin-in"></i><a href="">LINKEDIN</a></li>
+                    <li><i class="fa fa-light fa-file-arrow-down"></i><a href="">CURRÍCULO</a></li>
+                </ul>
+            </div>
+        </aside>
+
         <section id="apresentacao" class="container">
             <h1>
                 <p>OLÁ, BEM VINDO AO MEU PORTFÓLIO!</p>
@@ -29,18 +51,20 @@
             <div id="caixa-sobre-mim">
                 <img src="https://via.placeholder.com/300x400" align="left">
                 <div class="caixa-resumo-objetivo">
-                <h3>RESUMO</h3>
-                <p align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae nisl ex.
-                    Praesent posuere
-                    scelerisque odio ut pharetra. Proin eget ex in lacus commodo bibendum. Vestibulum euismod consequat
-                    vulputate.</p>
+                    <h3>RESUMO</h3>
+                    <p align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae nisl ex.
+                        Praesent posuere
+                        scelerisque odio ut pharetra. Proin eget ex in lacus commodo bibendum. Vestibulum euismod
+                        consequat
+                        vulputate.</p>
                 </div>
                 <div class="caixa-resumo-objetivo">
-                <h3>OBJETIVOS</h3>
-                <p align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae nisl ex.
-                    Praesent posuere
-                    scelerisque odio ut pharetra. Proin eget ex in lacus commodo bibendum. Vestibulum euismod consequat
-                    vulputate.</p>
+                    <h3>OBJETIVOS</h3>
+                    <p align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae nisl ex.
+                        Praesent posuere
+                        scelerisque odio ut pharetra. Proin eget ex in lacus commodo bibendum. Vestibulum euismod
+                        consequat
+                        vulputate.</p>
                 </div>
                 <h3 class="temp">STACK DE TECNOLOGIAS</h3>
                 <ul>
@@ -200,29 +224,9 @@
 
     </main>
 
-    <div id="menu-principal">
-        <i class="fa-solid fa-caret-down"></i>
-    </div>
-
-    <aside>
-        <nav>
-            <ul id="ul-nav">
-                <li><a class="title apresentacao" href="#apresentacao">APRESENTAÇÃO</a></li>
-                <li><a class="title sobre-mim" href="#sobre-mim">SOBRE MIM</a></li>
-                <li><a class="title projetos" href="#projetos">PROJETOS</a></li>
-                <li><a class="title contato" href="#contato">CONTATO</a></li>
-            </ul>
-        </nav>
-        <div>
-            <ul id="ul-inf">
-                <li><i class="fa fa-brands fa-github"></i><a href="">GITHUB</a></li>
-                <li><i class="fa fa-brands fa-linkedin-in"></i><a href="">LINKEDIN</a></li>
-                <li><i class="fa fa-light fa-file-arrow-down"></i><a href="">CURRÍCULO</a></li>
-            </ul>
-        </div>
-    </aside>
 
     <script src="js/app.js"></script>
+    <script src="js/menu-responsivo.js"></script>
 
 </body>
 
