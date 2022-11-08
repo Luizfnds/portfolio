@@ -77,13 +77,18 @@ ul {
     padding-top: 100px;
 }
 
+
 #ul-nav li {
     font-size: 1rem;
 }
 
 #ul-nav a:hover {
-    letter-spacing: 4px;
-    border-bottom: solid 1px var(--azul);
+    font-size: 17px;
+}
+
+.title-marcado {
+    font-size: 17px;
+    color: var(--azul);
 }
 
 #ul-inf {
@@ -100,7 +105,7 @@ ul {
     color: aliceblue;
     border: 1px aliceblue solid;
     cursor: pointer;
-    transition: all 600ms;
+    transition: all 800ms;
 }
 
 #ul-inf a {
@@ -111,8 +116,7 @@ ul {
 }
 
 #ul-inf li:hover {
-    letter-spacing: 4px;
-    border-color: var(--azul);
+    background-color: var(--azul-claro);
 }
 
 /* MAIN */
@@ -342,3 +346,5 @@ input {
     color: aliceblue;
     border: none;
 }
+
+
