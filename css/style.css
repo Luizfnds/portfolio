@@ -367,7 +367,7 @@ form textarea:focus {
 
 /* responsividade */
 
-@media only screen and (min-width: 925px) and (max-width: 1200px){
+@media only screen and (min-width: 925px) and (max-width: 1260px){
     .container {
         padding: 0px 30px;
         font-size: 10px;
@@ -401,5 +401,34 @@ form textarea:focus {
 
     #sobre-mim .icon {
         padding-right: 5px;
+    }
+
+    .caixa-title-cont {
+        padding-left: 10px;
+    }
+
+    #lista-de-projetos a {
+        font-size: 0.7rem;
+        padding: 2px 4px;
+    }
+
+    #lista-de-projetos {
+        padding-right: 10px;
+    } 
+
+    .menu {
+        column-gap: 4px;
+    }
+}
+
+@media only screen and (min-width: 925px) and (max-width: 1020px) {
+    .menu {
+        flex-direction: column;
+        row-gap: 4px;
+        padding-bottom: 20px;
+    }
+
+    #lista-de-projetos a {
+        padding: 4px 4px;
     }
 }
