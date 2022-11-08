@@ -11,6 +11,23 @@
     --preto-claro: #2c2c3780;
 }
 
+#menu-principal {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    height: 40px;
+    width: 100%;
+    background-color: var(--preto);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-caret-down {
+    font-size: 30px;
+    color: var(--azul);
+}
+
 body {
     display: flex;
     overflow-y: hidden;
@@ -74,7 +91,8 @@ ul {
 }
 
 #ul-nav {
-    padding-top: 100px;
+    letter-spacing: 2px;
+    padding: 100px 10px 0 10px;
 }
 
 
@@ -133,7 +151,7 @@ ul {
     justify-content: center;
 }
 
-.container p {
+p {
     letter-spacing: 0;
     font-size: .9rem;
     padding: 10px 0 25px 0;
@@ -177,27 +195,16 @@ h1 {
 }
 
 h3 {
+    letter-spacing: 3px;
     font-size: .8rem;
-    border-bottom: 1px solid var(--azul-claro);
     display: inline-block;
-    font-weight: 400;
+    color: var(--azul);
+    font-weight: 700;
 }
 
 #sobre-mim {
     row-gap: 100px;
     justify-content: center;
-}
-
-#sobre-mim p {
-    letter-spacing: 0;
-    padding: 10px 0 25px 0;
-    font-weight: 300;
-}
-
-#sobre-mim h3 {
-    border-bottom: 1px solid var(--azul-claro);
-    display: inline-block;
-    font-weight: 400;
 }
 
 #sobre-mim img {
@@ -206,11 +213,9 @@ h3 {
     padding: 0 40px 0px 0;
 }
 
-/*#sobre-mim div {
-    max-width: 1100px;
-    min-height: 200px;
+#caixa-sobre-mim{
     margin-top: 50px;
-}*/
+}
 
 .caixa-resumo-objetivo {
     height: 110px;
@@ -408,7 +413,7 @@ form textarea:focus {
         font-size: 12px;
     }
 
-    .container p {
+    p {
         font-size: 0.8rem;
     }
 
@@ -481,21 +486,50 @@ form textarea:focus {
         padding-bottom: 10px;
     } 
 
-    #sobre-mim ul {
-    }
-
     #sobre-mim li{
         letter-spacing: 1px;
         font-size: 9px;
     }
 
-    .container p {
+    p {
         padding: 10px 0 15px 0;
     }
 
 }
 
 @media only screen and (max-width: 900px) {
+
+    #sobre-mim p {
+        font-size: 0.6rem;
+        padding-bottom: 10px;
+    } 
+
+    #sobre-mim li{
+        letter-spacing: 1px;
+        font-size: 9px;
+    }
+
+    #ul-nav li {
+        font-size: 0.7rem;
+    }
+
+    #ul-nav a:hover {
+        font-size: 0.8rem;
+    }
+
+    #ul-inf a {
+        letter-spacing: 2px;
+        padding: 5px;
+    }
+
+    .title-marcado {
+        font-size: 0.8rem;
+        color: var(--azul);
+    }
+
+    #ul-inf li {
+        width: 110px;
+    }
 
     .container {
         padding: 0px 20px;
@@ -517,7 +551,7 @@ form textarea:focus {
         height: 150px;
     }
 
-    #projetos {
+    #lista-de-projetos {
         row-gap: 20px;
     }
 
@@ -528,5 +562,31 @@ form textarea:focus {
 
     .menu {
         flex-direction: row;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #projetos img {
+        width: 200px;
+    }
+    main {
+        width: 100%;
+    }
+
+    aside {
+
+        visibility: hidden;
+        transition: all 0s;
+    }
+
+    aside ul {
+    }
+
+    a, #ul-inf li {
+        transition: all 0s;
+    }
+
+    #menu-principal {
+        visibility: visible;
     }
 }
