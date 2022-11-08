@@ -257,12 +257,7 @@ p {
 #projetos img {
     height: 150px;
     width: 300px;
-}
-
-.caixa-title-cont {
-    display: flex;
-    flex-direction: column;
-    padding-left: 30px;
+    padding-right: 30px;
 }
 
 #lista-de-projetos {
@@ -282,14 +277,14 @@ p {
     justify-content: flex-start;
 }
 
-#lista-de-projetos li {
+#lista-de-projetos ul li {
     font-size: 10px;
     letter-spacing: 1px;
     border: 1px solid var(--azul-claro);
     padding: 2px 5px;
 }
 
-#lista-de-projetos a {
+#lista-de-projetos ul li a {
     font-size: 12px;
     letter-spacing: 2px;
     padding: 5px 15px;
@@ -300,7 +295,7 @@ p {
     color: aliceblue;
 }
 
-#lista-de-projetos a:hover {
+#lista-de-projetos ul li a:hover {
     background-color: var(--azul-claro);
     color: aliceblue;
 }
@@ -376,6 +371,28 @@ form textarea:focus {
 
 @media only screen and (max-width: 1260px) {
 
+    /* MAIN */
+
+    h2 {
+        font-size: 15px;
+        top: 30px;
+    }
+
+    h3 {
+        font-size: 12px;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    .container {
+        padding: 0px 30px;
+        font-size: 10px;
+    }
+
+    /* APRESENTAÇÃO */
+
     #apresentacao p {
         font-size: 1.2rem;
     }
@@ -383,6 +400,8 @@ form textarea:focus {
     #apresentacao span {
         font-size: 1.4rem;
     }
+
+    /* BARRA LATERAL */
 
     aside nav ul li {
         font-size: 0.8rem;
@@ -397,32 +416,12 @@ form textarea:focus {
         color: var(--azul);
     }
 
-    div ul li {
+    #sobre-mim div ul li {
         font-size: .6rem;
         width: 140px;
     }
 
-    .container {
-        padding: 0px 30px;
-        font-size: 10px;
-    }
-
-    h2 {
-        font-size: 15px;
-        top: 30px;
-    }
-
-    #sobre-mim img {
-        padding-right: 20px;
-    }
-
-    h3 {
-        font-size: 12px;
-    }
-
-    p {
-        font-size: 0.8rem;
-    }
+    /* SOBRE MIM */
 
     #sobre-mim ul {
         column-gap: 10px;
@@ -437,8 +436,15 @@ form textarea:focus {
         padding-right: 5px;
     }
 
-    .caixa-title-cont {
-        padding-left: 10px;
+    #sobre-mim img {
+        padding-right: 20px;
+    }
+
+    /* PROJETOS */
+
+    #projetos img {
+        width: 260px;
+        padding-right: 20px;
     }
 
     #lista-de-projetos a {
@@ -453,18 +459,73 @@ form textarea:focus {
     .menu {
         column-gap: 4px;
     }
-
-    #projetos img {
-        width: 260px;
-    }
 }
 
 @media only screen and (max-width: 920px) {
+
+    /* MAIN */
+
+    main {
+        width: 100%;
+    }
+
+    h3 {
+        letter-spacing: 3px;
+        font-size: 11px;
+    }
+
+    p {
+        padding: 10px 0 0 0;
+    }
+
+    .container {
+        padding: 0px 20px;
+        font-size: 10px;
+    }
+
+    /* BARRA LATERAL */
+    
+    #menu-principal {
+        visibility: visible;
+    }
+
+    aside {
+        visibility: hidden;
+        width: 100%;
+        z-index: 1;
+    }
+
+    aside nav ul li {
+        font-size: 0.7rem;
+    }
+
+    aside nav ul a:hover {
+        font-size: 0.8rem;
+    }
+
+    aside div ul a {
+        letter-spacing: 2px;
+        padding: 5px;
+    }
+
+    aside div ul li {
+        width: 110px;
+    }
+
+    .title-marcado {
+        font-size: 0.8rem;
+        color: var(--azul);
+    }
 
     /* APRESENTAÇÃO */
 
 
     /* SOBRE MIM */
+
+    #sobre-mim p {
+        font-size: 0.8rem;
+        padding: 5px 0 10px 0;
+    }
 
     #sobre-mim img {
         width: 200px;
@@ -475,7 +536,7 @@ form textarea:focus {
         column-gap: 4px;
     }
 
-    #sobre-mim li {
+    #sobre-mim ul li {
         letter-spacing: 0px;
         font-size: .5rem;
     }
@@ -490,74 +551,12 @@ form textarea:focus {
         padding-bottom: 10px;
     }
 
-
-    h3 {
-        letter-spacing: 3px;
-        font-size: 11px;
-    }
-
-    p {
-        padding: 10px 0 0 0;
-    }
-
-    aside nav ul li {
-        font-size: 0.7rem;
-    }
-
-    aside nav ul a:hover {
-        font-size: 0.8rem;
-    }
-
-    div ul a {
-        letter-spacing: 2px;
-        padding: 5px;
-    }
-
-    .title-marcado {
-        font-size: 0.8rem;
-        color: var(--azul);
-    }
-
-    div ul li {
-        width: 110px;
-    }
-
-    .container {
-        padding: 0px 20px;
-        font-size: 10px;
-    }
-
-    #sobre-mim p {
-        font-size: 0.8rem;
-        padding: 5px 0 10px 0;
-    }
-
-
-    /* CONTATO */
-
-
-
-    /* BARRA LATERAL */
-
-
     #lista-de-projetos {
         row-gap: 20px;
     }
 
+    /* CONTATO */
 
-    main {
-        width: 100%;
-    }
-
-    aside {
-        visibility: hidden;
-        width: 100%;
-        z-index: 1;
-    }
-
-    #menu-principal {
-        visibility: visible;
-    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -573,7 +572,7 @@ form textarea:focus {
 
     /* CONTATO */
 
-    
+
     /* BARRA LATERAL */
 
 
