@@ -148,6 +148,10 @@ main {
     color: var(--preto);
 }
 
+hr {
+    border-color: var(--azul-claro);
+}
+
 .divisoria {
     width: 100px;
     height: 1px;
@@ -165,11 +169,11 @@ h2 {
     color: aliceblue;
     letter-spacing: 10px;
     position: absolute;
-    top: 50px;
+    top: 0px;
     display: flex;
     font-weight: 700;
     background-color: var(--azul);
-    padding: 0 20px 0 30px;
+    padding: 5px 20px 5px 30px;
 }
 
 h3 {
@@ -233,7 +237,7 @@ p {
 }
 
 #sobre-mim {
-    padding-top: 50px;
+    padding-top: 0px;
 }
 
 #sobre-mim ul {
@@ -272,12 +276,12 @@ p {
 }
 
 #lista-de-projetos {
-    margin: 150px 0px 100px 0px;
+    margin: 120px 0px 100px 0px;
     display: flex;
-    row-gap: 40px;
+    row-gap: 20px;
     flex-direction: column;
     overflow-y: scroll;
-    padding-right: 30px;
+    padding-right: 20px;
 }
 
 #lista-de-projetos ul {
@@ -419,6 +423,11 @@ form textarea:focus {
     .title-marcado {
         font-size: 0.9rem;
         color: var(--azul);
+    }
+
+    #links-de-contato ul li {
+        letter-spacing: 3px;
+        width: 140px;
     }
 
     /* APRESENTAÇÃO */
