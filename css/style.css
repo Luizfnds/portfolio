@@ -12,6 +12,7 @@
 }
 
 body {
+    height: 100vh;
     display: flex;
     overflow-y: hidden;
     font-family: 'Roboto', sans-serif;
@@ -23,7 +24,7 @@ body {
     visibility: hidden;
     position: fixed;
     top: 0;
-    height: 40px;
+    height: 7%;
     width: 100%;
     background-color: var(--preto);
     border-bottom: 1px solid aliceblue;
@@ -49,7 +50,7 @@ aside {
     letter-spacing: 5px;
     position: fixed;
     right: 0;
-    height: 100vh;
+    height: 100%;
     width: 20%;
     background-color: #2c2c37;
 }
@@ -121,16 +122,16 @@ div ul {
 
 /* MAIN */
 
-html, html * {
+html,
+html * {
     scrollbar-color: var(--preto-claro) #2c2c3740;
     scrollbar-width: thin;
 }
 
 main::-webkit-scrollbar,
 #lista-de-projetos::-webkit-scrollbar {
-    background-color: #2c2c3720;
-    border: 1px solid #2c2c3720;
-    width: 6px;
+    background-color: transparent;
+    width: 4px;
 }
 
 main::-webkit-scrollbar-thumb,
@@ -140,12 +141,12 @@ main::-webkit-scrollbar-thumb,
 }
 
 main {
-    height: 100vh;
+    height: 100%;
     width: 80%;
     overflow-y: scroll;
+    color: var(--preto);
     background: linear-gradient(79.39deg, #e4e4f1, #b3b4b9);
     background-size: 200%;
-    color: var(--preto);
 }
 
 hr {
@@ -187,7 +188,7 @@ h3 {
 p {
     letter-spacing: 0;
     font-size: .9rem;
-    padding: 10px 0 15px 0;
+    padding: 5px 0 15px 0;
     font-weight: 300;
 }
 
@@ -384,13 +385,12 @@ form textarea:focus {
 
 /* RESPONSIVIDADE */
 
-@media only screen and (min-width: 921px) and (max-width: 1260px) {
+@media only screen and (max-width: 1250px) {
 
     /* MAIN */
 
     h2 {
         font-size: 15px;
-        top: 30px;
     }
 
     h3 {
@@ -484,12 +484,13 @@ form textarea:focus {
     }
 }
 
-@media only screen and (max-width: 920px) {
+@media only screen and (max-width: 950px) {
 
     /* MAIN */
 
     main {
         width: 100%;
+        padding-top: 7%;
     }
 
     h3 {
@@ -502,7 +503,6 @@ form textarea:focus {
     }
 
     .container {
-        padding: 0px 20px;
         font-size: 10px;
     }
 
@@ -516,6 +516,8 @@ form textarea:focus {
         visibility: hidden;
         width: 100%;
         z-index: 1;
+        padding-top: 7%;
+        justify-content: space-around;
     }
 
     aside nav ul li {
@@ -524,6 +526,10 @@ form textarea:focus {
 
     aside nav ul a:hover {
         font-size: 1.1rem;
+    }
+
+    aside div ul {
+        margin-bottom: 30px;
     }
 
     aside div ul a {
@@ -547,11 +553,10 @@ form textarea:focus {
 
     #sobre-mim p {
         font-size: 0.8rem;
-        padding: 5px 0 10px 0;
+        padding: 5px 0 15px 0;
     }
 
     #sobre-mim img {
-        width: 200px;
         padding-right: 20px;
     }
 
@@ -583,21 +588,151 @@ form textarea:focus {
 
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 750px) {
 
-    /* APRESENTAÇÃO */
+    /* MAIN */
 
+    html,
+    html * {
+        scrollbar-color: none;
+        scrollbar-width: none;
+    }
 
-    /* SOBRE MIM */
+    main::-webkit-scrollbar,
+    #lista-de-projetos::-webkit-scrollbar {
+        display: none;
+    }
 
-
-    /* PROJETOS */
-
-
-    /* CONTATO */
+    main::-webkit-scrollbar-thumb,
+    #lista-de-projetos::-webkit-scrollbar-thumb {
+        display: none;
+    }
 
 
     /* BARRA LATERAL */
 
+
+    /* APRESENTAÇÃO */
+
+    #apresentacao p {
+        letter-spacing: 6px;
+    }
+
+    /* SOBRE MIM */
+
+    #sobre-mim img {
+        width: 200px;
+        padding-right: 10px;
+    }
+
+    /* PROJETOS */
+
+    #projetos img {
+        height: 140px;
+        margin: 0 10px 0px 0;
+    }
+
+    #lista-de-projetos {
+        padding-right: 0;
+    }
+
+    #lista-de-projetos a {
+        font-size: 0.7rem;
+        padding: 2px 4px;
+    }
+
+    .projeto {
+        height: 400px;
+    }
+
+    .caixa-title-cont {}
+
+    #lista-de-projetos ul {
+        padding-bottom: 0px;
+    }
+
+    .caixa {
+        align-items: flex-end;
+    }
+
+    .div-temp {
+        height: 160px;
+    }
+
+    .menu {
+        column-gap: 4px;
+    }
+
+    /* CONTATO */
+
+    form input,
+    form textarea {
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    /* BARRA LATERAL */
+
+
+    /* APRESENTAÇÃO */
+
+    /* SOBRE MIM */
+
+    #sobre-mim {
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    #sobre-mim img {
+        width: 100%;
+        height: 150px;
+        padding: 0 0px 20px 0px;
+    }
+
+    /* PROJETOS */
+
+    #projetos img {
+        display: none;
+    }
+
+    #lista-de-projetos {
+        padding-right: 0;
+    }
+
+    #lista-de-projetos a {
+        padding: 5px;
+    }
+
+    .div-temp {
+        height: auto;
+    }
+
+    .caixa-title-cont {
+        padding-bottom: 10px;
+    }
+
+    .caixa {
+        align-items: flex-start;
+    }
+
+    .menu {
+        padding-top: 3px;
+        flex-direction: column;
+        row-gap: 4px;
+    }
+
+    .menu a {
+        padding: 10px 0;
+    }
+
+    /* CONTATO */
+
+    form input,
+    form textarea {
+        width: 250px;
+    }
 
 }

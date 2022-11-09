@@ -10,13 +10,13 @@ function adicionarTituloMarcado() {
         let list = document.querySelectorAll(".title");
         let altura = document.querySelector("body").clientHeight;
 
-        if (scroll < (altura/100)*51) {
+        if (scroll < (altura/100)*60) {
             list.forEach((e) => { e.classList.remove("title-marcado") });
             document.querySelector(".apresentacao").classList.add("title-marcado")
-        } else if (scroll < altura/100*151) {
+        } else if (scroll < altura/100*160) {
             list.forEach((e) => { e.classList.remove("title-marcado") });
             document.querySelector(".sobre-mim").classList.add("title-marcado")
-        } else if (scroll < altura/100*251) {
+        } else if (scroll < altura/100*260) {
             list.forEach((e) => { e.classList.remove("title-marcado") });
             document.querySelector(".projetos").classList.add("title-marcado")
         } else {
