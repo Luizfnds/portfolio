@@ -10,13 +10,13 @@ function adicionarTituloMarcado() {
         let list = document.querySelectorAll(".title");
         let altura = document.querySelector("body").clientHeight;
 
-        if (scroll < (altura/100)*60) {
+        if (scroll < (altura / 100) * 60) {
             list.forEach((e) => { e.classList.remove("title-marcado") });
             document.querySelector(".apresentacao").classList.add("title-marcado")
-        } else if (scroll < altura/100*160) {
+        } else if (scroll < altura / 100 * 160) {
             list.forEach((e) => { e.classList.remove("title-marcado") });
             document.querySelector(".sobre-mim").classList.add("title-marcado")
-        } else if (scroll < altura/100*260) {
+        } else if (scroll < altura / 100 * 260) {
             list.forEach((e) => { e.classList.remove("title-marcado") });
             document.querySelector(".projetos").classList.add("title-marcado")
         } else {
@@ -38,8 +38,10 @@ function acionarMenu() {
 
 function medirTela() {
     window.addEventListener('resize', (e) => {
-        if (document.querySelector("body").clientWidth > 920) {
+        if (document.querySelector("body").clientWidth > 950) {
             menu.style.visibility = "visible";
+        } else {
+            menu.style.visibility = "hidden";
         }
     });
 }
