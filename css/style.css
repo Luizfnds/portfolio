@@ -94,7 +94,8 @@ aside nav ul a:hover {
     color: var(--azul);
 }
 
-div ul {
+aside div ul {
+    margin-bottom: 30px;
     row-gap: 10px;
 }
 
@@ -214,14 +215,20 @@ p {
 }
 
 #apresentacao p {
-    font-size: 1.3rem;
-    padding: 0;
+    font-size: 1.2rem;
+    padding-bottom: 10px;
     font-weight: 500;
     letter-spacing: 8px;
 }
 
-#apresentacao span {
-    font-size: 1.8rem;
+#nome {
+    font-size: 1.4rem;
+    color: aliceblue;
+    background-color: var(--azul);
+    padding: 5px 15px 5px 20px;
+}
+
+#atuacao {
     color: var(--azul);
 }
 
@@ -233,9 +240,12 @@ p {
 }
 
 #sobre-mim img {
-    width: 300px;
+    background-color: var(--azul);
+    width: 250px;
     height: 400px;
-    padding: 0 40px 0px 0;
+    margin: 0 30px 20px 0;
+    border-bottom-right-radius: 15%;
+    border-top-left-radius: 15%;
 }
 
 #sobre-mim {
@@ -266,6 +276,8 @@ p {
     width: 18px;
     padding-right: 10px;
     padding-bottom: 0;
+    background-color: transparent;
+    margin: 0;
 }
 
 /* PROJETOS */
@@ -277,12 +289,14 @@ p {
 }
 
 #lista-de-projetos {
-    margin: 120px 0px 100px 0px;
     display: flex;
     row-gap: 20px;
     flex-direction: column;
     overflow-y: scroll;
     padding-right: 20px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
 }
 
 #lista-de-projetos ul {
@@ -318,7 +332,7 @@ p {
 }
 
 .projeto {
-    max-width: 1100px;
+    width: 100%;
 }
 
 .caixa {
@@ -344,7 +358,7 @@ textarea {
     background-color: transparent;
     border: 1px solid var(--azul-claro);
     padding: 5px;
-    transition: border-color 0.5s ease-out;
+    transition: all 0.5s ease-out;
 }
 
 input {
@@ -354,7 +368,7 @@ input {
     background-color: transparent;
     border: 1px solid var(--azul-claro);
     padding: 5px;
-    transition: border 5s ease-out;
+    transition: all 0.5s ease-out;
 }
 
 #contato form {
@@ -458,10 +472,6 @@ form textarea:focus {
         padding-right: 5px;
     }
 
-    #sobre-mim img {
-        padding-right: 20px;
-    }
-
     #sobre-mim div ul li {
         font-size: .6rem;
     }
@@ -559,15 +569,6 @@ form textarea:focus {
         padding: 5px 0 15px 0;
     }
 
-    #sobre-mim img {
-        padding-right: 20px;
-    }
-
-    #sobre-mim ul {
-        row-gap: 4px;
-        column-gap: 4px;
-    }
-
     #sobre-mim ul li {
         letter-spacing: 0px;
         font-size: .5rem;
@@ -618,25 +619,31 @@ form textarea:focus {
 
     /* APRESENTAÇÃO */
 
+    h1 {
+        padding: 10px 5px 5px 15px;
+    }
+
     #apresentacao p {
-        letter-spacing: 6px;
+        letter-spacing: 4px;
+        padding-bottom: 5px;
+        font-size: 1.1rem;
+    }
+
+    #apresentacao span {
+        font-size: 1.1rem;
+    }
+
+    #apresentacao #nome {
+        font-size: 1.2rem;
+        padding: 5px 10px;
     }
 
     /* SOBRE MIM */
 
     #sobre-mim img {
-        width: 200px;
-        padding-right: 10px;
+        margin: 0 20px 10px 0;
     }
-
     /* PROJETOS */
-
-    #projetos img {
-        height: 200px;
-        width: 100%;
-        padding: 0 0 20px 0;
-        margin: 0 10px 0px 0;
-    }
 
     #lista-de-projetos {
         padding-right: 0;
@@ -646,18 +653,20 @@ form textarea:focus {
         font-size: 0.7rem;
     }
 
-    .projeto {
-        flex-direction: column;
-        align-items: flex-start;
-        height: 700px;
+    #lista-de-projetos img {
+        margin: 0px 10px 10px 0px;
+    }
+
+    .caixa-title-cont {
+        height: auto;
     }
 
     .caixa {
-        align-items: flex-end;
+        display: block;
     }
 
-    .div-temp {
-        height: 160px;
+    .menu {
+        margin-top: 10px;
     }
 
     /* CONTATO */
@@ -666,6 +675,7 @@ form textarea:focus {
     form textarea {
         width: 350px;
     }
+
 }
 
 @media only screen and (max-width: 450px) {
@@ -676,7 +686,16 @@ form textarea:focus {
     /* APRESENTAÇÃO */
 
     h1 {
-        padding: 20px 0 0 20px;
+    }
+
+    #apresentacao #nome {
+        display: block;
+        margin-top: 5px;
+        width: fit-content;
+    }
+
+    #apresentacao p {
+        padding-top: 0px;
     }
 
     /* SOBRE MIM */
@@ -688,15 +707,13 @@ form textarea:focus {
     }
 
     #sobre-mim img {
-        width: 100%;
-        height: 150px;
-        padding: 0 0px 20px 0px;
+        width: 150px;
+        height: 240px;
     }
 
     /* PROJETOS */
 
     #projetos img {
-       height: 180px;
     }
 
     #lista-de-projetos {
@@ -705,10 +722,6 @@ form textarea:focus {
 
     #lista-de-projetos a {
         padding: 15px 10px;
-    }
-
-    .div-temp {
-        height: auto;
     }
 
     .caixa {
