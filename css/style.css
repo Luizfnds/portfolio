@@ -643,6 +643,7 @@ form textarea:focus {
     #sobre-mim img {
         margin: 0 20px 10px 0;
     }
+
     /* PROJETOS */
 
     #lista-de-projetos {
@@ -685,8 +686,7 @@ form textarea:focus {
 
     /* APRESENTAÇÃO */
 
-    h1 {
-    }
+    h1 {}
 
     #apresentacao #nome {
         display: block;
@@ -713,8 +713,7 @@ form textarea:focus {
 
     /* PROJETOS */
 
-    #projetos img {
-    }
+    #projetos img {}
 
     #lista-de-projetos {
         padding-right: 0;
