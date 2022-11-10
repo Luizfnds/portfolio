@@ -45,13 +45,39 @@
             align-items: center;
             flex-direction: column;
         }
+
+        @media only screen and (max-width: 950px) {
+            h2 {
+                letter-spacing: 5px;
+                font-size: 25px;
+            }
+        }
+
+        @media only screen and (max-width: 650px) {
+            h2 {
+                letter-spacing: 4px;
+                font-size: 20px;
+            }
+        }
+
+        @media only screen and (max-width: 450px) {
+            h2 {
+                letter-spacing: 2px;
+                font-size: 15px;
+            }
+
+            a {
+            font-size: 12px;
+            padding: 5px 15px;
+        }
+        }
     </style>
 </head>
 
 <body>
     <div>
         <h2>EMAIL ENVIADO COM SUCESSO!</h2>
-        <a href="http://127.0.0.1:5500/index.html">VOLTAR</a>
+        <a href="http://192.168.0.38:5500/index.html">VOLTAR</a>
     </div>
 </body>
 

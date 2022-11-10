@@ -95,7 +95,6 @@ aside nav ul a:hover {
 }
 
 div ul {
-    padding-bottom: 30px;
     row-gap: 10px;
 }
 
@@ -168,7 +167,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.1rem;
+    font-size: 1.0rem;
     color: aliceblue;
     letter-spacing: 10px;
     position: absolute;
@@ -272,7 +271,6 @@ p {
 /* PROJETOS */
 
 #projetos img {
-    background-color: #0D87C0;
     height: 150px;
     width: 300px;
     margin-right: 30px;
@@ -305,7 +303,7 @@ p {
 #lista-de-projetos a {
     font-size: 12px;
     letter-spacing: 2px;
-    padding: 5px 15px;
+    padding: 15px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -320,7 +318,6 @@ p {
 }
 
 .projeto {
-    height: 200px;
     max-width: 1100px;
 }
 
@@ -347,6 +344,7 @@ textarea {
     background-color: transparent;
     border: 1px solid var(--azul-claro);
     padding: 5px;
+    transition: border-color 0.5s ease-out;
 }
 
 input {
@@ -356,6 +354,7 @@ input {
     background-color: transparent;
     border: 1px solid var(--azul-claro);
     padding: 5px;
+    transition: border 5s ease-out;
 }
 
 #contato form {
@@ -476,7 +475,6 @@ form textarea:focus {
 
     #lista-de-projetos a {
         font-size: 0.7rem;
-        padding: 2px 4px;
     }
 
     #lista-de-projetos {
@@ -494,7 +492,8 @@ form textarea:focus {
 
     main {
         width: 100%;
-        padding-top: 50px;
+        height: calc(100vh - 50px);
+        margin-top: 50px;
     }
 
     h3 {
@@ -579,7 +578,6 @@ form textarea:focus {
     #projetos img {
         height: 120px;
         width: 190px;
-        
     }
 
     #projetos p {
@@ -594,7 +592,7 @@ form textarea:focus {
 
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 650px) {
 
     /* MAIN */
 
@@ -634,7 +632,9 @@ form textarea:focus {
     /* PROJETOS */
 
     #projetos img {
-        height: 140px;
+        height: 200px;
+        width: 100%;
+        padding: 0 0 20px 0;
         margin: 0 10px 0px 0;
     }
 
@@ -644,17 +644,12 @@ form textarea:focus {
 
     #lista-de-projetos a {
         font-size: 0.7rem;
-        padding: 2px 4px;
     }
 
     .projeto {
-        height: 400px;
-    }
-
-    .caixa-title-cont {}
-
-    #lista-de-projetos ul {
-        padding-bottom: 0px;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 700px;
     }
 
     .caixa {
@@ -663,10 +658,6 @@ form textarea:focus {
 
     .div-temp {
         height: 160px;
-    }
-
-    .menu {
-        column-gap: 4px;
     }
 
     /* CONTATO */
@@ -683,6 +674,10 @@ form textarea:focus {
 
 
     /* APRESENTAÇÃO */
+
+    h1 {
+        padding: 20px 0 0 20px;
+    }
 
     /* SOBRE MIM */
 
@@ -701,7 +696,7 @@ form textarea:focus {
     /* PROJETOS */
 
     #projetos img {
-        display: none;
+       height: 180px;
     }
 
     #lista-de-projetos {
@@ -709,29 +704,15 @@ form textarea:focus {
     }
 
     #lista-de-projetos a {
-        padding: 5px;
+        padding: 15px 10px;
     }
 
     .div-temp {
         height: auto;
     }
 
-    .caixa-title-cont {
-        padding-bottom: 10px;
-    }
-
     .caixa {
-        align-items: flex-start;
-    }
-
-    .menu {
-        padding-top: 3px;
-        flex-direction: column;
-        row-gap: 4px;
-    }
-
-    .menu a {
-        padding: 10px 0;
+        align-items: flex-end;
     }
 
     /* CONTATO */
