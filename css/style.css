@@ -67,7 +67,7 @@ a {
     font-weight: 300;
 }
 
-ul {
+aside ul {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -180,8 +180,8 @@ h2 {
 }
 
 h3 {
-    letter-spacing: 3px;
-    font-size: .8rem;
+    letter-spacing: 2px;
+    font-size: .9rem;
     display: inline-block;
     color: var(--azul);
     font-weight: 700;
@@ -196,7 +196,7 @@ p {
 
 .container {
     display: flex;
-    height: 100%;
+    height: 600px;
     letter-spacing: 5px;
     position: relative;
     flex-direction: column;
@@ -209,20 +209,19 @@ p {
 /* APRESENTAÇÃO */
 
 #apresentacao {
-    height: 100%;
     align-items: flex-start;
     justify-content: center;
 }
 
 #apresentacao p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     padding-bottom: 10px;
     font-weight: 500;
     letter-spacing: 8px;
 }
 
 #nome {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: aliceblue;
     background-color: var(--azul);
     padding: 5px 15px 5px 20px;
@@ -237,6 +236,7 @@ p {
 #sobre-mim {
     row-gap: 100px;
     justify-content: center;
+    padding-top: 0px;
 }
 
 #sobre-mim img {
@@ -248,20 +248,32 @@ p {
     border-top-left-radius: 15%;
 }
 
-#sobre-mim {
-    padding-top: 0px;
+#sobre-mim div {
+    margin-bottom: 20px;
 }
 
-#sobre-mim ul {
+.caixa-resumo p {
+    padding: 2px 0px;
+}
+
+.caixa-resumo ul {
+    font-size: 0.8rem;
+    letter-spacing: normal;
+    width: auto;
+    padding: 5px 0px;
+    font-weight: 300;
+}
+ 
+.tecnologica__list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 15px;
-    row-gap: 15px;
-    padding-top: 20px;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding-top: 10px;
 }
 
-#sobre-mim ul li {
+.tecnologica__item {
     font-size: 9px;
     padding: 3px 4px;
     border: 1px solid var(--azul);
@@ -293,10 +305,10 @@ p {
     row-gap: 20px;
     flex-direction: column;
     overflow-y: scroll;
-    padding-right: 20px;
     width: 100%;
-    height: 100%;
-    justify-content: center;
+    height: 70%;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 #lista-de-projetos ul {
@@ -332,7 +344,9 @@ p {
 }
 
 .projeto {
-    width: 100%;
+    width: 95%;
+    border: 1px solid #0D87C0;
+    padding: 10px;
 }
 
 .caixa {
@@ -459,7 +473,7 @@ form textarea:focus {
 
     /* SOBRE MIM */
 
-    #sobre-mim ul {
+    .tecnologica__list {
         column-gap: 10px;
         row-gap: 10px;
     }
@@ -485,6 +499,11 @@ form textarea:focus {
 
     #lista-de-projetos a {
         font-size: 0.7rem;
+    }
+
+    #lista-de-projetos ul {
+        flex-wrap: wrap;
+        row-gap: 10px;
     }
 
     #lista-de-projetos {
@@ -569,7 +588,7 @@ form textarea:focus {
         padding: 5px 0 15px 0;
     }
 
-    #sobre-mim ul li {
+    .tecnologica__item {
         letter-spacing: 0px;
         font-size: .5rem;
     }
