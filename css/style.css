@@ -214,20 +214,21 @@ p {
 }
 
 #apresentacao p {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     padding-bottom: 10px;
     font-weight: 500;
     letter-spacing: 8px;
 }
 
 #nome {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: aliceblue;
     background-color: var(--azul);
     padding: 5px 15px 5px 20px;
 }
 
 #atuacao {
+    font-size: 1.3rem;
     color: var(--azul);
 }
 
